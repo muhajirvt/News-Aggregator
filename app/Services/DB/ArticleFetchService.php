@@ -12,8 +12,8 @@ class ArticleFetchService
     {
         $query = Article::withDetails();
         // Filter by source
-        $query->when(!empty($params['source']), function ($q) use ($params) {
-            $q->where('sources.name', $params['source']);
+        $query->when(!empty($params['source_id']), function ($q) use ($params) {
+            $q->where('articles.source_id', $params['source_id']);
         });
 
         // Filter by category
@@ -47,12 +47,13 @@ class ArticleFetchService
         return $query->orderBy('articles.id')->paginate($params['per_page'] ?? self::MAX_LIMIT);
     }
 
-    public function getByReference($id)
+    public function getById($id)
     {
         return Article::withDetails()->where('articles.id', $id)->first();
     }
 
-    public function arrangementData($articles){
+    public function arrangementData($articles) :array
+    {
         return [
             "total"        => $articles->total(),
             "per_page"     => $articles->perPage(),
@@ -60,5 +61,19 @@ class ArticleFetchService
             "last_page"    => $articles->lastPage(),
             "articles"     => $articles
         ];
+    }
+
+    public function returnResponse($code, $success, $data, $message){
+        $array            = [];
+        $array['success'] = $success;
+        if(!empty($data)){
+            $array['data'] = $data;
+        }
+
+        if(!empty($message)){
+            $array['message'] = $message;
+        }
+
+        return response()->json($array, $code);
     }
 }

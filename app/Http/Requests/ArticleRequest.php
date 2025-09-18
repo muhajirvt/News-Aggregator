@@ -17,6 +17,13 @@ class ArticleRequest extends FormRequest
     public function rules(): array
     {
         return [
+            'source_id' => [
+                'nullable',
+                'integer',
+                Rule::exists('sources', 'id')->where(function ($query) {
+                    $query->where('is_active', 1);
+                }),
+            ],
             'search'    => 'nullable|string|max:100',
             'date_from' => 'nullable|date_format:Y-m-d H:i:s',
             'date_to'   => 'nullable|date_format:Y-m-d H:i:s|after_or_equal:date_from',
