@@ -77,100 +77,100 @@ Fetch a paginated list of articles.
 {
     "success": true,
     "data": {
-        "total": 10,
-        "per_page": 200,
+        "total": 100,
+        "per_page": 10,
         "current_page": 1,
-        "last_page": 1,
+        "last_page": 10,
         "articles": [
             {
-                "id": 1,
-                "title": "Borderlands 4 review – the chaotic, colourful shooter has finally grown up a little",
-                "description": "",
-                "source": "The Guardian",
-                "category": "Games",
-                "author": "Unknown",
-                "published_at": "2025-09-17 03:59pm"
+                "id": 27,
+                "title": "Microsoft open-sources its 6502 version of BASIC from 1976",
+                "description": "After years of unofficial copies of Microsoft’s 6502 BASIC floating around on the internet, the software giant has released the code under an open-source license. 6502 BASIC was one of Microsoft’s first pieces of software, adapted in 1976 by Microsoft cofound…",
+                "source": "News API",
+                "category": "Unknown",
+                "author": "Tom warren",
+                "published_at": "2025-09-04 10:22am"
             },
             {
-                "id": 2,
-                "title": "What is new in UK-US tech deal and what will it mean for the British economy?",
-                "description": "",
-                "source": "The Guardian",
-                "category": "Technology",
-                "author": "Unknown",
-                "published_at": "2025-09-17 02:29pm"
+                "id": 28,
+                "title": "Elon Musk’s New Software Company Is the Opposite of Microsoft",
+                "description": "\"It’s a tongue-in-cheek name, but the project is very real!\" Musk says.",
+                "source": "News API",
+                "category": "Unknown",
+                "author": "Matt novak",
+                "published_at": "2025-08-22 04:16pm"
             },
             {
-                "id": 3,
-                "title": "AI will make the rich unfathomably richer. Is this really what we want? | Dustin Guastella",
-                "description": "",
-                "source": "The Guardian",
-                "category": "Opinion",
-                "author": "Unknown",
-                "published_at": "2025-09-16 12:00pm"
+                "id": 29,
+                "title": "Is AI the end of software engineering or the next step in its evolution?",
+                "description": "The first time I used ChatGPT to code, back in early 2023, I was reminded of \"The Monkey's Paw,\" a classic horror story about an accursed talisman that grants wishes, but always by the most malevolent path - the desired outcome arrives after exacting a brutal…",
+                "source": "News API",
+                "category": "Unknown",
+                "author": "Sheon han",
+                "published_at": "2025-09-01 09:35am"
             },
             {
-                "id": 4,
-                "title": "From cherry juice to white noise: I tested the most-hyped sleep aids – here’s what worked (and what didn’t)",
-                "description": "",
-                "source": "The Guardian",
-                "category": "The filter",
-                "author": "Unknown",
-                "published_at": "2025-09-17 02:00pm"
+                "id": 30,
+                "title": "Garmin’s Top Training Features, Explained",
+                "description": "Garmin has some of the best proprietary fitness software around. Here’s how to interpret all that meticulously gathered data.",
+                "source": "News API",
+                "category": "Unknown",
+                "author": "Brent rose",
+                "published_at": "2025-09-10 12:30pm"
             },
             {
-                "id": 5,
-                "title": "‘I have to do it’: Why one of the world’s most brilliant AI scientists left the US for China",
-                "description": "",
-                "source": "The Guardian",
-                "category": "News",
-                "author": "Unknown",
-                "published_at": "2025-09-16 04:00am"
+                "id": 31,
+                "title": "Amazon’s next tablet might run Android",
+                "description": "Amazon is preparing to launch a new tablet that could run on Android instead of its custom FireOS software, according to a report from Reuters. Multiple sources tell the outlet that Amazon plans to release the “higher-end” Android tablet as early as next year…",
+                "source": "News API",
+                "category": "Unknown",
+                "author": "Emma roth",
+                "published_at": "2025-08-20 03:07pm"
             },
             {
-                "id": 6,
-                "title": "Borderlands 4 review – the chaotic, colourful shooter has finally grown up a little",
-                "description": "",
-                "source": "The Guardian",
-                "category": "Games",
-                "author": "Unknown",
-                "published_at": "2025-09-17 03:59pm"
+                "id": 32,
+                "title": "Is the Flipper Zero the next big car theft gadget?",
+                "description": "404 Media has a report out about an underground software market that enables the Flipper Zero to be used to unlock a wide variety of vehicles, including Ford, Audi, Volkswagen, Subaru, Hyundai, Kia, and several other models. The hack works by intercepting and…",
+                "source": "News API",
+                "category": "Unknown",
+                "author": "Andrew j. hawkins",
+                "published_at": "2025-08-21 03:17pm"
             },
             {
-                "id": 7,
-                "title": "What is new in UK-US tech deal and what will it mean for the British economy?",
-                "description": "",
-                "source": "The Guardian",
-                "category": "Technology",
-                "author": "Unknown",
-                "published_at": "2025-09-17 02:29pm"
+                "id": 33,
+                "title": "New York City Is Stuck With a $45 Million EV Fleet That’s Glitchy as Hell",
+                "description": "Problems included suddenly losing power, the inability to exit in an emergency, issues with the gauges and icons on the dashboard, software that did not meet safety requirements, brakes not working, and \"unintended\" vehicle movement.",
+                "source": "News API",
+                "category": "Unknown",
+                "author": "Riley gutiérrez mcdermid",
+                "published_at": "2025-08-19 04:50pm"
             },
             {
-                "id": 8,
-                "title": "AI will make the rich unfathomably richer. Is this really what we want? | Dustin Guastella",
-                "description": "",
-                "source": "The Guardian",
-                "category": "Opinion",
-                "author": "Unknown",
-                "published_at": "2025-09-16 12:00pm"
+                "id": 34,
+                "title": "Vimeo to be acquired by Bending Spoons for $1.38 billion",
+                "description": "Vimeo is getting bought up by Bending Spoons, a European software company that has amassed a growing portfolio of businesses, including Evernote, WeTransfer, and Meetup. Bending Spoons will pay $1.38 billion to acquire the video hosting platform, and it expec…",
+                "source": "News API",
+                "category": "Unknown",
+                "author": "Emma roth",
+                "published_at": "2025-09-10 03:22pm"
             },
             {
-                "id": 9,
-                "title": "From cherry juice to white noise: I tested the most-hyped sleep aids – here’s what worked (and what didn’t)",
-                "description": "",
-                "source": "The Guardian",
-                "category": "The filter",
-                "author": "Unknown",
-                "published_at": "2025-09-17 02:00pm"
+                "id": 35,
+                "title": "Grammarly can now fix your Spanish and French grammar",
+                "description": "For 16 years, a team of linguists carefully crafted and honed the grammar editing software Grammarly to match natural English language patterns. Now, the company is getting a big assist from AI to expand similar offerings to five more languages: Spanish, Fren…",
+                "source": "News API",
+                "category": "Unknown",
+                "author": "Elissa welle",
+                "published_at": "2025-09-10 12:51pm"
             },
             {
-                "id": 10,
-                "title": "‘I have to do it’: Why one of the world’s most brilliant AI scientists left the US for China",
-                "description": "",
-                "source": "The Guardian",
-                "category": "News",
-                "author": "Unknown",
-                "published_at": "2025-09-16 04:00am"
+                "id": 36,
+                "title": "iPhone 17 event live blog: on the ground at Apple’s keynote",
+                "description": "It's time for another \"awe dropping\" Apple event. The company is expected to announce the iPhone 17 today, alongside some new Apple Watches and perhaps the AirPods Pro 3. We got a glimpse of some software at WWDC 2025, but today is all about the new hardware,…",
+                "source": "News API",
+                "category": "Unknown",
+                "author": "Victoria song, allison johnson, jacob kastrenakes",
+                "published_at": "2025-09-09 04:27pm"
             }
         ]
     }
@@ -189,13 +189,13 @@ Fetch a specific article using an ID.
 {
     "success": true,
     "data": {
-        "id": 1,
-        "title": "Borderlands 4 review – the chaotic, colourful shooter has finally grown up a little",
-        "description": "",
-        "source": "The Guardian",
-        "category": "Games",
-        "author": "Unknown",
-        "published_at": "2025-09-17 03:59pm"
+        "id": 50,
+        "title": "AI Is a Threat to the Entry-Level Job Market, Stanford Study Shows",
+        "description": "Substantial declines in employment have occurred for early-career workers in occupations most exposed to AI, such as software development and customer support.",
+        "source": "News API",
+        "category": "Unknown",
+        "author": "Dashia milden",
+        "published_at": "2025-08-28 09:20pm"
     }
 }
 ```
