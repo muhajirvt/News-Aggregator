@@ -1,10 +1,12 @@
 # News Aggregator API
 
 A Laravel 12-based API that aggregates articles from multiple external news sources (NewsAPI, NYTimes, Guardian) and provides filtering capabilities.
+```json
  "require": {
     "php": "^8.2",
     "laravel/framework": "^12.0"
  }
+```
 ---
 
 ## Getting Started
