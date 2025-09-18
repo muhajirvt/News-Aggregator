@@ -46,12 +46,12 @@ class NYTService implements NewsInterface
         foreach ($results as $item)
         {
             $articles[] = [
-                "source_id" => $source->id,
-                "title" => $item["headline"]["main"],
-                "description" => $item["snippet"],
-                "category" => strtolower(trim($item["section_name"] ?? "Unknown")),
+                "source_id"    => $source->id,
+                "title"        => $item["headline"]["main"],
+                "description"  => $item["snippet"],
+                "category"     => strtolower(trim($item["section_name"] ?? "Unknown")),
                 "published_at" => Carbon::parse($item["pub_date"])->format("Y-m-d H:i:s"),
-                "author" => strtolower(trim($item["author"] ?? "Unknown")),
+                "author"       => strtolower(trim($item["author"] ?? "Unknown")),
             ];
         }
         return $articles;
@@ -60,10 +60,10 @@ class NYTService implements NewsInterface
     private function callApi($source)
     {
         $params = [
-            'q' => 'software',
-            'api-key' => $source->api_key,
+            'q'          => 'software',
+            'api-key'    => $source->api_key,
             'begin_date' => $this->startDateTime,
-            'page' => $this->pageNumber,
+            'page'       => $this->pageNumber,
         ];
         try
         {

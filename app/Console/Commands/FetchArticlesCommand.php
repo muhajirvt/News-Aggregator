@@ -13,6 +13,6 @@ class FetchArticlesCommand extends Command
 
     public function handle()
     {
-        FetchArticlesJob::dispatchSync();
+        FetchArticlesJob::dispatch();
     }
 }

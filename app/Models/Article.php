@@ -36,9 +36,4 @@ class Article extends Model
         ->join('authors', 'authors.id', '=', 'articles.author_id')
         ->join('categories', 'categories.id', '=', 'articles.category_id');
     }
-
-    public function scopeReference($query, $id)
-    {
-        return $query->where('articles.id', $id);
-    }
 }

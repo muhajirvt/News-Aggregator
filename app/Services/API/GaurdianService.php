@@ -45,12 +45,12 @@ class GaurdianService implements NewsInterface
         foreach ($results as $item)
         {
             $articles[] = [
-                "source_id" => $source->id,
-                "title" => $item["webTitle"],
-                "description" => "",
-                "category" => strtolower(trim($item["sectionName"] ?? "Unknown")),
+                "source_id"    => $source->id,
+                "title"        => $item["webTitle"],
+                "description"  => "",
+                "category"     => strtolower(trim($item["sectionName"] ?? "Unknown")),
                 "published_at" => Carbon::parse($item["webPublicationDate"])->format("Y-m-d H:i:s"),
-                "author" => strtolower(trim($item["author"] ?? "Unknown")),
+                "author"       => strtolower(trim($item["author"] ?? "Unknown")),
             ];
         }
         return $articles;
@@ -59,10 +59,10 @@ class GaurdianService implements NewsInterface
     private function callApi($source)
     {
         $params = [
-            'q' => 'software',
-            'api-key' => $source->api_key,
+            'q'         => 'software',
+            'api-key'   => $source->api_key,
             'from-date' => $this->startDateTime,
-            'page' => $this->pageNumber,
+            'page'      => $this->pageNumber,
             'page-size' => $this->pageSize,
         ];
 
