@@ -64,7 +64,7 @@ Fetch a paginated list of articles.
 
 - `search` – keyword in title or content  
 - `category` – category name  
-- `source` – source name  
+- `source_id` – source id   
 - `author` – author name  
 - `date_from` – published start date (`Y-m-d H:i:s`)  
 - `date_to` – published end date (`Y-m-d H:i:s`)  
